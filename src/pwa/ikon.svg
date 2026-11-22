@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Evrak Masası simgesi: turkuaz-mavi zemin üzerinde onaylı belge -->
+  <defs>
+    <linearGradient id="z" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#z)"/>
+  <g fill="none" stroke="#fff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 112H180a36 36 0 0 0-36 36v216a36 36 0 0 0 36 36h152a36 36 0 0 0 36-36V180z"/>
+    <path d="M300 112v68h68"/>
+    <path d="m206 290 34 34 70-70"/>
+  </g>
+</svg>

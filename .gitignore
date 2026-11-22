@@ -1,0 +1,4 @@
+node_modules/
+test/cikti/
+test/ekran/
+.DS_Store

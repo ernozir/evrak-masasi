@@ -1,0 +1,23 @@
+{
+  "name": "Evrak Masası",
+  "short_name": "Evrak Masası",
+  "description": "PDF dosyalarını internete yüklemeden görüntüleme ve işaretleme aracı",
+  "lang": "tr",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1f36",
+  "theme_color": "#0b1f36",
+  "categories": ["productivity", "business"],
+  "icons": [
+    { "src": "ikon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "ikon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "ikon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "file_handlers": [
+    { "action": "./", "accept": { "application/pdf": [".pdf"] }, "icons": [{ "src": "ikon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ],
+  "launch_handler": { "client_mode": "focus-existing" }
+}
