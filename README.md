@@ -7,6 +7,14 @@ Muhasebe ofisleri için **internete yüklemeden** PDF görüntüleme ve işaretl
 - **İnternet gerekmez:** Yüklendikten sonra internetsiz çalışır; gerekli her şey programın içindedir.
 - **Dosyalarınız bilgisayarınızdan çıkmaz:** PDF'ler hiçbir sunucuya gönderilmez, tüm işlemler tarayıcının içinde yapılır.
 
+## 🎥 Videoyu izleyin
+
+**Bölüm 1:** Evrak Masası'nın neden tarayıcıda çalıştığını, Claude'a hangi istemlerle yaptırdığımızı, nasıl yüklendiğini ve klasör açma, arama, işaretleme, kaydetme ve Excel'e aktarmayı 4 dakikalık videoda gösteriyoruz.
+
+[![Vergide Yapay Zekâ – Evrak Masası #1: PDF dosyalarını internete yüklemeden inceleyin ve işaretleyin](docs/video1-kapak.png)](https://www.youtube.com/watch?v=FdwSnbLfboU)
+
+▶️ **https://www.youtube.com/watch?v=FdwSnbLfboU**
+
 ## Kurulum: uygulama olarak yükleyin (önerilen)
 
 1. Chrome ya da Edge ile **https://ernozir.github.io/evrak-masasi/** adresini açın.
@@ -45,6 +53,24 @@ Yazıyı seçip **H** tuşuna basmak onu hemen vurgular. Tüm kısayollar için 
 - Taranmış (yalnızca resimden oluşan) sayfalarda yazı seçilemez; vurgu dikdörtgen olarak çizilir.
 - Başka programlarla eklenmiş notlar görüntülenir ve listelenir, ama burada değiştirilemez.
 - Chrome ve Edge'de denenmiştir. Safari ve Firefox'ta denenmedi.
+
+## Kullanılan istemler
+
+### Bölüm 1'de kullanılan istemler (v0.1)
+
+Programın kodu [Claude](https://claude.ai) ile üretildi. Videoda gösterilen istemler aşağıda; izleyiciye örnek olsun diye biraz sadeleştirildi. Kendi ihtiyacınıza göre değiştirip benzer araçlar üretebilirsiniz.
+
+**İstem 1: fikir**
+
+> Vergide Yapay Zekâ eğitim serimiz için mali müşavirlik, avukatlık ve benzeri ofislerde çok kullanılabilecek bir program yapmak istiyorum. Herkes kolayca açıp kullanabilmeli ve internetsiz çalışmalı; önemli PDF dosyalarını bilmediğimiz web sitelerine yüklemek zorunda kalmayalım. Bu yüzden HTML ve JavaScript ile yapalım. Program bir PDF aracı olsun: PDF görüntüleme, bölme, sayfa silme, birleştirme ve küçültme. Senin de önerilerin varsa ekleyelim. Önce bunun bu şekilde yapılabilir olup olmadığına bakalım.
+
+**İstem 2: tasarım ve görüntüleme**
+
+> Arayüz profesyonel olsun; basit bir PDF aracı gibi değil, bir masaüstü programı gibi görünsün. Fotoğraflardan, fiş ve dekontlardan PDF oluşturma da yapabiliriz.
+>
+> Görüntüleme ekranında birden fazla dosya ya da bir klasör açıp dosyalar arasında geçebileceğimiz bir şerit olsun. Ofislerde vurgulama, altını çizme ve not alma çok kullanılıyor; bunları da ekleyelim.
+
+Bu istemlerde dikkat ettiğimiz şeyler: **amacı açıkça yazmak** (herkes açabilsin, internetsiz çalışsın, belgeler bilinmeyen sitelere gitmesin), **istediğimiz araçları sayıp Claude'un önerisini de istemek**, kod yazmadan önce **yapılabilir olup olmadığını sormak** ve **ofiste gerçekten ne kullanılıyorsa onu istemek** (vurgulama, altını çizme, not). Bu yüzden PDF dosyalarını ekrana çizen iki kütüphane (pdf.js, pdf-lib) internetten yüklenmiyor, programın içine gömülü. Claude programı uydurma belgelerle (`test/`) denedi.
 
 ## Geliştirme
 
